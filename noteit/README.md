@@ -1,4 +1,4 @@
 noteit
 
-a simple note taking web application created using  html css javascript php mysql  
-the databases must be created first using the code in "datbasecreation folder" 
+a simple note taking web application created using html css javascript php mysql  
+the databases must be created first using the code in "databasecreation folder" 
