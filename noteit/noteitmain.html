@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Noteit Main</title>
+    <link href='css/noteitmain.css' type='text/css' rel='stylesheet' />
+    <script src='javascript/jquery-3.2.1.js'></script>
+  </head>
+  <body>
+   <div>
+     <div id='head'>
+         <p id='maintitle'>Noteit</p>
+     </div>
+     <div id='body'>
+      <div id='arealogin'>
+         <input id='username' type='text' placeholder='username' />
+	 <br />
+         <input id='password' type='text' placeholder='password' />
+	 <br />
+	 <input id='loginbutton'  type='submit' value='Login' />
+	 <div id ='info'></div>
+      </div>	 
+     </div>
+   </div>
+  </body>
+  <script>
+$("#loginbutton").click(function(){
+ //alert("submit click");
+ let username = $("#username").val();
+ let password = $("#password").val();
+  
+ //alert(username+password);
+ if(username == '' || password == '')
+ {
+  alert("no");
+
+ }
+ else
+ {
+  //alert("yes");
+  //send a php
+  //send to the php the the username and pasword 
+  $.post("php/loginpagephp/login.php",{username:username,password:password},function(data){
+  //alert(data);
+  //get data and compare 
+   if( data != 1 )
+   {
+    //alert('cannot login');
+    // massege to 
+    $('#info').append("<p>can not login </p>");
+   }
+   else
+   {
+     //alert('can login');
+
+     window.location="noteit.html";
+   }
+   
+  });
+ }
+});
+  </script>
+</html>

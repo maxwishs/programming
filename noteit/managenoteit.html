@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manage Noteit</title>
+  <script src = 'javascript/jquery-3.2.1.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <input id='reset_button' type='submit' value="reset noteit" />
+  </body>
+  <script>
+    'use strict';
+     $("#reset_button").click( 
+       function()
+       {
+          //alert('clicked');
+	  //connect to the server and reset the noteit table
+	 $.post('php/resetnoteit.php',function(data)
+	 {
+	   $('body').append(data)
+	 }
+	);
+       }
+     );
+  </script>
+</html>

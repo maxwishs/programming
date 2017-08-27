@@ -1,0 +1,44 @@
+noteit 
+
+general
+
+basic function
+
+create new note
+ change this to not load new page when enter note 
+
+ show note
+ query the database for all data 
+ send the data to website
+ display the data to website
+                            
+delete note
+ every note will have button to delete the note from the server 
+
+edit note
+ when click will go to edit mode 
+
+category 
+ to group the data 
+
+a page to control the database 
+
+a page to login 
+  create the table to store password and username type
+  create login page 
+  button will go to login php
+  send password and username
+  check if password and username is true return value
+  get return value and do what based on the return value
+ 
+
+edit login
+make the upper menu
+
+making you cannot access certain page 
+  
+ 
+
+ 
+
+
